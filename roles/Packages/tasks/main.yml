@@ -1,0 +1,11 @@
+---
+# Docker
+- name: Install Docker repo
+  yum: name={{ item }} state=present
+  with_items:
+    - http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
+
+- name: Install Docker
+  yum: name={{ item }} state=present enablerepo=epel
+  with_items:
+    - docker-io

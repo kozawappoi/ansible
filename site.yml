@@ -1,0 +1,8 @@
+- name: Install_Docker
+  hosts: server
+  user: root
+  roles:
+    #for root
+    - Packages
+    - user
+    - Docker

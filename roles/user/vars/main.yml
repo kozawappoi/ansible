@@ -1,0 +1,5 @@
+---
+user_name: docker
+user_name_b: DOCKER
+user_home: /home/docker
+group_name: wheel
