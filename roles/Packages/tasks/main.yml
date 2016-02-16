@@ -8,4 +8,5 @@
 - name: Install Docker
   yum: name={{ item }} state=present enablerepo=epel
   with_items:
-    - docker-io
+    #- docker-io
+    - docker
